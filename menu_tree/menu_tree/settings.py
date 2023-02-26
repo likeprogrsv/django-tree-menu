@@ -77,11 +77,8 @@ WSGI_APPLICATION = 'menu_tree.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'django_menu_tree',
-        'USER': 'postgres',
-        'PASSWORD': 'likeprogdbpass',
-        'HOST': 'localhost',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db_menu_tree.sqlite3',
     }
 }
 
